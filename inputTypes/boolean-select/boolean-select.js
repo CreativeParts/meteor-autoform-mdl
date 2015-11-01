@@ -1,9 +1,9 @@
-Template.afBooleanSelect_materialize.helpers({
+Template.afBooleanSelect_mdl.helpers({
   attrs: Utility.helpers.attsToggleInvalidClass
 });
 
-Template.afBooleanSelect_materialize.helpers({
+Template.afBooleanSelect_mdl.helpers({
   optionAtts: Utility.helpers.optionAtts
 });
 
-Template.afBooleanSelect_materialize.onRendered(Utility.initializeSelect);
+Template.afBooleanSelect_mdl.onRendered(Utility.initializeSelect);

@@ -1,3 +1,3 @@
-Template.afInputTel_materialize.helpers({
+Template.afInputTel_mdl.helpers({
   attrs: Utility.helpers.attsToggleInvalidClass
 });

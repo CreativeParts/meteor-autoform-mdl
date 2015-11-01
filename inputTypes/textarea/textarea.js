@@ -1,4 +1,4 @@
-Template.afTextarea_materialize.helpers({
+Template.afTextarea_mdl.helpers({
   atts: function() {
     var atts;
     atts = _.clone(this.atts);
@@ -8,6 +8,6 @@ Template.afTextarea_materialize.helpers({
   }
 });
 
-Template.afTextarea_materialize.rendered = function() {
+Template.afTextarea_mdl.rendered = function() {
     this.$('textarea').characterCounter();
 }

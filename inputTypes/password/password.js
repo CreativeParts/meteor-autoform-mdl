@@ -1,7 +1,7 @@
-Template.afInputPassword_materialize.helpers({
+Template.afInputPassword_mdl.helpers({
   attrs: Utility.helpers.attsToggleInvalidClass
 });
 
-Template.afInputPassword_materialize.rendered = function() {
+Template.afInputPassword_mdl.rendered = function() {
     this.$('textarea').characterCounter();
 }

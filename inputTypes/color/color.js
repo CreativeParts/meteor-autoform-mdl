@@ -1,3 +1,3 @@
-Template.afInputColor_materialize.helpers({
+Template.afInputColor_mdl.helpers({
   attrs: Utility.helpers.attsToggleInvalidClass
 });

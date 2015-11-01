@@ -1,4 +1,4 @@
-Template.afCheckboxGroupInline_materialize.helpers({
+Template.afCheckboxGroupInline_mdl.helpers({
     dsk:      Utility.helpers.dsk,
     itemAtts: Utility.helpers.itemAttsWithUniqId
 });

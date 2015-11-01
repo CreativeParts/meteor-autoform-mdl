@@ -1,4 +1,4 @@
-Template['quickForm_materialize'].helpers({
+Template['quickForm_mdl'].helpers({
   submitButtonAtts: function() {
     var atts, qfAtts;
     qfAtts = this.atts;

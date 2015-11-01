@@ -1,3 +1,3 @@
-Template.afInputEmail_materialize.helpers({
+Template.afInputEmail_mdl.helpers({
   attrs: Utility.helpers.attsToggleInvalidClass
 });

@@ -1,8 +1,8 @@
 Package.describe({
-  name: "gildaspk:autoform-materialize",
-  summary: "Materialize theme for Autoform",
-  version: "0.0.22",
-  git: "https://github.com/djhi/meteor-autoform-materialize.git"
+  name: "creativeparts:meteor-autoform-mdl",
+  summary: "Google MDL Autoform Theme - CreativeParts",
+  version: "0.0.1",
+  git: "https://github.com/CreativeParts/meteor-autoform-mdl"
 });
 
 Package.onUse(function(api) {

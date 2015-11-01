@@ -1,4 +1,4 @@
-Template.afLabel_materialize.helpers({
+Template.afLabel_mdl.helpers({
   atts: function() {
     var labelAtts;
     labelAtts = this.afFieldLabelAtts;

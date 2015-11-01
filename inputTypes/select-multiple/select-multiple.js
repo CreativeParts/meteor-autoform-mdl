@@ -1,8 +1,8 @@
-Template.afSelectMultiple_materialize.helpers({
+Template.afSelectMultiple_mdl.helpers({
   optionAtts: Utility.helpers.optionAtts
 });
 
-Template.afSelectMultiple_materialize.helpers({
+Template.afSelectMultiple_mdl.helpers({
   atts: function() {
     var atts;
     atts = _.clone(this.atts);

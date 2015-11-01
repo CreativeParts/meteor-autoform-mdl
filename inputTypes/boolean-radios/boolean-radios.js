@@ -1,8 +1,8 @@
-Template.afBooleanRadioGroup_materialize.helpers({
+Template.afBooleanRadioGroup_mdl.helpers({
   attrs: Utility.helpers.attsToggleInvalidClass
 });
 
-Template.afBooleanRadioGroup_materialize.helpers({
+Template.afBooleanRadioGroup_mdl.helpers({
   falseAtts: function() {
     var atts;
     atts = _.omit(this.atts, 'id', 'trueLabel', 'falseLabel', 'data-schema-key');

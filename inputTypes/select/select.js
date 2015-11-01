@@ -1,8 +1,8 @@
-Template.afSelect_materialize.helpers({
+Template.afSelect_mdl.helpers({
   attrs: Utility.helpers.attsToggleInvalidClass
 });
-Template.afSelect_materialize.helpers({
+Template.afSelect_mdl.helpers({
   optionAtts: Utility.helpers.optionAtts
 });
 
-Template.afSelect_materialize.onRendered(Utility.initializeSelect);
+Template.afSelect_mdl.onRendered(Utility.initializeSelect);

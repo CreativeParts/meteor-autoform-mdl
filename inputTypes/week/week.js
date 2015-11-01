@@ -1,3 +1,3 @@
-Template.afInputWeek_materialize.helpers({
+Template.afInputWeek_mdl.helpers({
   attrs: Utility.helpers.attsToggleInvalidClass
 });

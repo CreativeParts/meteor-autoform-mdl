@@ -1,3 +1,3 @@
-Template.afInputButton_materialize.helpers({
+Template.afInputButton_mdl.helpers({
   atts: Utility.helpers.attsAddClass
 });
