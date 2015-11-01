@@ -1,6 +1,6 @@
 Google MDL theme for Meteor Autoform
 =========================
-Adds [materialize](http://materializecss.com/) templates for autoform.
+Adds [Material Design Lite](http://www.getmdl.io/) look and feel to autoform.
 
 
 =========================
