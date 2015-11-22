@@ -8,20 +8,33 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom("1.0");
   api.use(["templating", "underscore"], "client");
-  api.use("aldeed:autoform@5.1.1");
+  api.use("zodiase:mdl@1.0.6_1");
+  
+  api.use("aldeed:autoform@5.5.1");
+  api.use("aldeed:collection2@2.5.0");
+  
+  
   api.addFiles([
-    // utility
+
+    //aldeed:autoform@5.5.1
+
+    // // utility
     'utilities/initialize.js',
-    'utilities/toggle-invalid-class.js',
-    'utilities/initialize-select.js',
+    // 'utilities/toggle-invalid-class.js',
+    // 'utilities/initialize-select.js',
+
+
     // utility template helpers
     'utilities/helpers/initialize.js',
-    'utilities/helpers/dsk.js',
-    'utilities/helpers/item-atts-with-uniq-id.js',
-    'utilities/helpers/atts-toggle-invalid-class.js',
-    'utilities/helpers/atts-check-selected.js',
-    'utilities/helpers/atts-add-class.js',
-    'utilities/helpers/option-atts.js',
+    // 'utilities/helpers/dsk.js',
+    // 'utilities/helpers/item-atts-with-uniq-id.js',
+    // 'utilities/helpers/atts-toggle-invalid-class.js',
+    // 'utilities/helpers/atts-check-selected.js',
+    // 'utilities/helpers/atts-add-class.js',
+    // 'utilities/helpers/option-atts.js',
+
+
+
     // input types
     'inputTypes/boolean-checkbox/boolean-checkbox.html',
     'inputTypes/boolean-checkbox/boolean-checkbox.js',
@@ -90,15 +103,25 @@ Package.onUse(function(api) {
     'inputTypes/pickadate/pickadate.js',
     'inputTypes/label/label.html',
     'inputTypes/label/label.js',
+
+
+
+
     // components that render a form
     'components/autoForm/autoForm.html',
+    'components/autoForm/autoForm.js',
     'components/quickForm/quickForm.html',
     'components/quickForm/quickForm.js',
+
+
+
     // components that render controls within a form
     'components/afArrayField/afArrayField.html',
     'components/afFormGroup/afFormGroup.html',
     'components/afFormGroup/afFormGroup.js',
     'components/afObjectField/afObjectField.html',
     'components/afQuickField/afQuickField.html'
+
+    
   ], "client");
 });

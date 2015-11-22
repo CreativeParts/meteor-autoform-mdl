@@ -1,6 +1,7 @@
 /* global AutoForm, arrayTracker */
 
-Template.afArrayField.helpers({
+// Template.afArrayField.helpers({
+  Template.afArrayField_mdl.helpers({
   getTemplateName: function () {
     return AutoForm.getTemplateName('afArrayField', this.template, this.name);
   },

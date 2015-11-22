@@ -1,6 +1,7 @@
 /* global AutoForm, ReactiveVar, arrayTracker, Hooks, MongoObject, Utility, setDefaults */
 
-Template.autoForm.helpers({
+// Template.autoForm.helpers({
+  Template.autoForm_mdl.helpers({
   atts: function autoFormTplAtts() {
     // After removing all of the props we know about, everything else should
     // become a form attribute unless it's an array or object.
@@ -56,7 +57,7 @@ Template.autoForm.helpers({
   }
 });
 
-Template.autoForm.created = function autoFormCreated() {
+Template.autoForm_mdl.created = function autoFormCreated() {
   var template = this;
 
   // We'll add tracker dependencies for reactive field values
@@ -128,7 +129,7 @@ Template.autoForm.created = function autoFormCreated() {
   });
 };
 
-Template.autoForm.rendered = function autoFormRendered() {
+Template.autoForm_mdl.rendered = function autoFormRendered() {
   var lastId;
   this.autorun(function () {
     var data = Template.currentData(); // rerun when current data changes
@@ -140,7 +141,7 @@ Template.autoForm.rendered = function autoFormRendered() {
   });
 };
 
-Template.autoForm.destroyed = function autoFormDestroyed() {
+Template.autoForm_mdl.destroyed = function autoFormDestroyed() {
   var self = this;
   var formId = self.data.id;
 

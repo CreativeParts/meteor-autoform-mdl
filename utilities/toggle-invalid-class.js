@@ -1,4 +1,7 @@
 Utility.toggleInvalidClass = function(atts) {
+
+  console.log('Utility.toggleInvalidClass:: '+atts);
+
   var context, formId, isInvalid, ss;
   formId = AutoForm.getFormId();
   ss = AutoForm.getFormSchema();
