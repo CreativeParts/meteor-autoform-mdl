@@ -1,3 +1,4 @@
 Template.afInputButton_mdl.helpers({
-  atts: Utility.helpers.attsAddClass
+  //Pull MDL Btn classes...
+  atts: Utility.helpers.attsAddBtnClass
 });

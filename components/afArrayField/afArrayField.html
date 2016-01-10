@@ -1,4 +1,10 @@
 <template name="afArrayField_mdl">
+  {{> Template.dynamic template=getTemplateName data=innerContext}}
+</template>
+
+
+
+<!-- <template name="afArrayField_mdl">
   <div class="collection">
     <div class="collection-item">
       {{afFieldLabelText name=this.atts.name}}
@@ -28,3 +34,4 @@
     {{/afEachArrayItem}}
   </div>
 </template>
+ -->

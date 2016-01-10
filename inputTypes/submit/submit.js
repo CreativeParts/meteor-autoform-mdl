@@ -1,3 +1,4 @@
 Template.afInputSubmit_mdl.helpers({
-  atts: Utility.helpers.attsAddClass
+  //Pull MDL Submit Btn classes...
+  atts: Utility.helpers.attsAddSubmitBtnClass
 });

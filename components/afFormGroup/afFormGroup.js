@@ -12,13 +12,17 @@ Template.afFormGroup_mdl.helpers({
             'toggle',
             'switch'
         ];
+        console.log('@afFormGroup_mdl');
+        console.log(this);
         type = AutoForm.getInputType(this);
         result = !_.contains(skipInputType, type);
         return result;
     },
     skipLabel: function() {
+        //Hide Label for  specific field types...
         var result, skipLabelTypes, type;
         skipLabelTypes = [
+            'text',
             'checkbox',
             'checkbox-group',
             'boolean-checkbox',
@@ -32,7 +36,17 @@ Template.afFormGroup_mdl.helpers({
         type = AutoForm.getInputType(this);
         result = this.skipLabel || _.contains(skipLabelTypes, type);
         return result;
+    },
+    mdlErr: function(){
+        var type = AutoForm.getInputType(this);
+        if(type == 'text'){
+            return true;
+        }else{
+            return false;
+        }
     }
+
+
 });
 
 Template.afFormGroup_mdl.rendered = function() {

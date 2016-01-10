@@ -1,17 +1,27 @@
 <template name="afFormGroup_mdl">
     <div class="row">
+ 
+        <!-- <div class="{{#if addInputField}}input-field{{/if}} col s12 mdl-textfield mdl-js-textfield"> -->
         <div class="{{#if addInputField}}input-field{{/if}} col s12">
+            
             {{#if skipLabel}}
                 {{> afFieldInput this.afFieldInputAtts}}
             {{else}}
-                {{> afFieldInput this.afFieldInputAtts}}
                 {{>afLabel_mdl this}}
+                {{> afFieldInput this.afFieldInputAtts}}
+                
             {{/if}}
+
             {{#if afFieldIsInvalid name=this.name}}
-                <div class="red-text">
-                    <i class="mdi-alert-warning"></i> {{{afFieldMessage name=this.name}}}
-                </div>
+                    {{#if mdlErr}}
+                        <span class="mdl-textfield__error">{{{afFieldMessage name=this.name}}}</span>
+                    {{else}}
+                        <div class="red-text">
+                            <i class="mdi-alert-warning"></i> {{{afFieldMessage name=this.name}}}
+                        </div>                    
+                    {{/if}}
             {{/if}}
         </div>
+
     </div>
 </template>

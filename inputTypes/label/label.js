@@ -5,3 +5,6 @@ Template.afLabel_mdl.helpers({
     return labelAtts;
   }
 });
+ 
+
+console.log('test');
