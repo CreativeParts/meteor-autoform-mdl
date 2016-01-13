@@ -12,8 +12,7 @@ Template.afFormGroup_mdl.helpers({
             'toggle',
             'switch'
         ];
-        console.log('@afFormGroup_mdl');
-        console.log(this);
+        //this returns AutoForm field properties, 
         type = AutoForm.getInputType(this);
         result = !_.contains(skipInputType, type);
         return result;

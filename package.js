@@ -8,29 +8,21 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom("1.0");
   api.use(["templating", "underscore"], "client");
-  api.use("zodiase:mdl@1.0.6_1");
+  api.use("zodiase:mdl@1.0.6_2");
 
-  api.use("aldeed:autoform@5.5.1");
-  api.use("aldeed:collection2@2.5.0");
+  api.use("aldeed:autoform@5.8.1");
+  api.use("aldeed:collection2@2.8.0");
   
+
+  // aldeed:autoform@5.8.1
+  // aldeed:collection2@2.8.0
+
   
   api.addFiles([
 
-    //aldeed:autoform@5.5.1
-
-    // // utility
     'utilities/initialize.js',
-    // 'utilities/toggle-invalid-class.js',
-    // 'utilities/initialize-select.js',
-
-
-    // utility template helpers
     'utilities/helpers/initialize.js',
-
     'utilities/helpers/atts-add-class.js',
-
-
-
 
     // input types
     'inputTypes/button/button.html',

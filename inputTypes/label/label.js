@@ -7,4 +7,4 @@ Template.afLabel_mdl.helpers({
 });
  
 
-console.log('test');
+console.log('afLabel_mdl Loaded...');
