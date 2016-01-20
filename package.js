@@ -19,8 +19,9 @@ Package.onUse(function(api) {
 
   
   api.addFiles([
-
+    
     'utilities/initialize.js',
+    'utilities/helpers/startup.js',
     'utilities/helpers/initialize.js',
     'utilities/helpers/atts-add-class.js',
 
