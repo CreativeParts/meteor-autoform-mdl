@@ -9,19 +9,17 @@ Package.onUse(function(api) {
   api.versionsFrom("1.0");
   api.use(["templating", "underscore"], "client");
   api.use("zodiase:mdl@1.0.6_2");
-
   api.use("aldeed:autoform@5.8.1");
   api.use("aldeed:collection2@2.8.0");
   
-
   // aldeed:autoform@5.8.1
   // aldeed:collection2@2.8.0
 
-  
   api.addFiles([
-
+    
     'utilities/initialize.js',
     'utilities/helpers/initialize.js',
+    'utilities/helpers/startup.js',    
     'utilities/helpers/atts-add-class.js',
 
     // input types
@@ -35,13 +33,11 @@ Package.onUse(function(api) {
     'inputTypes/label/label.html',
     'inputTypes/label/label.js',
 
-
     // components that render a form
     'components/autoForm/autoForm.html',
     'components/autoForm/autoForm.js',
     'components/quickForm/quickForm.html',
     'components/quickForm/quickForm.js',
-
 
     // components that render controls within a form
     'components/afArrayField/afArrayField.html',
