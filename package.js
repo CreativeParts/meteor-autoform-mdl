@@ -46,7 +46,7 @@ Package.onUse(function(api) {
     // components that render controls within a form
     'components/afArrayField/afArrayField.html',
     'components/afFormGroup/afFormGroup.html',
-    'components/afFormGroup/afFormGroup.js',
+    'components/afFormGroup/afFormGroup.js',   
     'components/afObjectField/afObjectField.html',
     'components/afQuickField/afQuickField.html'
 
