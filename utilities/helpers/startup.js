@@ -36,4 +36,10 @@ Template.registerHelper('cpAFMDL', function (context) {
     
     return result;
   }
-)
+);
+
+
+
+// Template.registerHelper('getInputAttr', function (inputAttr) {
+//     console.log(inputAttr);
+// });
