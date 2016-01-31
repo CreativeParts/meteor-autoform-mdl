@@ -12,9 +12,6 @@ Package.onUse(function(api) {
   api.use("aldeed:autoform@5.8.1");
   api.use("aldeed:collection2@2.8.0");
   
-  // aldeed:autoform@5.8.1
-  // aldeed:collection2@2.8.0
-
   api.addFiles([
     
     'utilities/initialize.js',

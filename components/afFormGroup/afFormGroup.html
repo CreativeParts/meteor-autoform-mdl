@@ -1,12 +1,16 @@
 <template name="afFormGroup_mdl">
     <div class="row">
  
-        <div class="{{#if addInputField}}input-field{{/if}} col s12 {{cpAFMDL this}}">
+        <div class="{{#if addInputField}}input-field{{/if}} col s12 {{cpAFMDL this this.afFieldInputAtts}}">
             
             {{#if skipLabel}}              
                 {{> afFieldInput this.afFieldInputAtts}}
             {{else}}
-                {{>afLabel_mdl this}}
+
+                {{#if themeRequireLabel this}}
+                    {{>afLabel_mdl this}}
+                {{/if}}
+
                 {{> afFieldInput this.afFieldInputAtts}}
                 
             {{/if}}
