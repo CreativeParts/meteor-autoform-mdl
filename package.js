@@ -31,7 +31,6 @@ Package.onUse(function(api) {
     'inputTypes/submit/submit.html',
     'inputTypes/submit/submit.js',
     'inputTypes/text/text.html',
-    // 'inputTypes/text/text.js',
     'inputTypes/label/label.html',
     'inputTypes/label/label.js',
 

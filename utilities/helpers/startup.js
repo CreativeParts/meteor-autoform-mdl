@@ -26,13 +26,13 @@ Template.registerHelper('getMdlLabelClass', function (context, fieldAttr) {
 
   }
 );
-
-Template.registerHelper('getMdlInputClass', function (context, fieldAttr) {
+//=================================================================================
+Template.registerHelper('getMdlComponentOuterDivClass', function (context, fieldAttr) {
     //Return MDL Input classes based on input field type...
 
     var result = "";
     var type = AutoForm.getInputType(context);
-    // console.log(context);
+    console.log(context);
     var attsExist = "false";
     
     if( typeof context == 'undefined' 
@@ -42,8 +42,7 @@ Template.registerHelper('getMdlInputClass', function (context, fieldAttr) {
 
         attsExist = "false";
     }else{
-        attsExist = "true";   
-        // console.log(fieldAttr.mdltheme);
+        attsExist = "true";
     }
 
 
@@ -69,41 +68,4 @@ Template.registerHelper('getMdlInputClass', function (context, fieldAttr) {
     return result;
   }
 );
-
-
-
-
-Template.registerHelper('themeRequireLabel', function (context) {
-    //Check if the component selected theme require label, 
-    //will skip label for special inputs/ themes (ex. input: Text, theme: Floating)...
-
-    //No label to appear with Floating / text input
-    //
-
-    var inputType = AutoForm.getInputType(context);
-
-    if( typeof context == 'undefined' 
-        || typeof context.afFieldInputAtts == 'undefined'
-        || typeof context.afFieldInputAtts.mdltheme == 'undefined' 
-        || context.afFieldInputAtts.mdltheme == ''){
-
-        return true;
-    }else{
-        //
-        if(context.afFieldInputAtts.mdltheme == 'Floating' && inputType == "text"){
-            return false;
-        }else{
-            return true;    
-        }
-
-    }
-
-});
-
-
-
-
-
-
-
-
+//=================================================================================

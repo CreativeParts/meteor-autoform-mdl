@@ -6,7 +6,7 @@ Template['quickForm_mdl'].helpers({
     if (typeof qfAtts.buttonClasses === 'string') {
       atts['class'] = qfAtts.buttonClasses;
     } else {
-      atts['class'] = 'btn waves-effect waves-light';
+      atts['class'] = 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect';
     }
     return atts;
   }

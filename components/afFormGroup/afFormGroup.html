@@ -1,23 +1,20 @@
 <template name="afFormGroup_mdl">
     <div class="row">
  
-        <div class="{{#if addInputField}}input-field{{/if}} col s12 {{getMdlInputClass this this.afFieldInputAtts}}">
+        <div class="{{#if addInputField}}input-field{{/if}} col s12 {{getMdlComponentOuterDivClass this this.afFieldInputAtts}}">
             
             {{#if skipLabel}}
                 {{> afFieldInput this.afFieldInputAtts}}
             {{else}}
 
-                {{#if themeRequireLabel this}}
-                    {{>afLabel_mdl this}}
-                {{/if}}
-
+                {{>afLabel_mdl this}}
                 {{> afFieldInput this.afFieldInputAtts}}
                 
             {{/if}}
 
 
 
-            
+
 
             {{#if afFieldIsInvalid name=this.name}}
                     {{#if mdlErr}}
