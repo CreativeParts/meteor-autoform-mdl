@@ -1,0 +1,7 @@
+<template name="afCheckboxGroup_mdl">
+  <div class="af-checkbox-group" {{dsk}}>
+    {{#each this.items}}
+      <div><label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"><input type="checkbox" class="mdl-checkbox__input" value="{{this.value}}" {{atts}} /> {{this.label}}</label></div>
+    {{/each}}
+  </div>
+</template>

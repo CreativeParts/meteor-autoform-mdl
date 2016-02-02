@@ -1,10 +1,38 @@
-
-
-Template.registerHelper('cpAFMDL', function (context, fieldAttr) {
-    //Return MDL classes depending on input field Type, mdlTheme parameter,
+Template.registerHelper('getMdlLabelClass', function (context, fieldAttr) {
+    //Return MDL Label classes based on input field type...
 
     var result = "";
     var type = AutoForm.getInputType(context);
+  
+    if(type == "text"){
+        //Text inputs...
+        result = "mdl-textfield__label";
+
+    }else if(type == "textarea"){
+        //Text Area inputs...
+        result = "mdl-textfield__label";
+
+    }else if(type == "select-checkbox"){
+        //Select Checkboxes...
+        result = "mdl-checkbox__label";
+
+    }else if(type == "select-radio"){
+        //Select Radio...
+        result = "mdl-radio__label";
+
+    }
+
+    return result;
+
+  }
+);
+
+Template.registerHelper('getMdlInputClass', function (context, fieldAttr) {
+    //Return MDL Input classes based on input field type...
+
+    var result = "";
+    var type = AutoForm.getInputType(context);
+    // console.log(context);
     var attsExist = "false";
     
     if( typeof context == 'undefined' 
@@ -36,12 +64,8 @@ Template.registerHelper('cpAFMDL', function (context, fieldAttr) {
         //Text Area inputs...
         result = "mdl-textfield mdl-js-textfield";
 
-    }else if(type == "select-radio"){
-        //Radio inputs...
-        result = "mdl-radio mdl-js-radio mdl-js-ripple-effect";
-
     }
-    
+        
     return result;
   }
 );
@@ -52,6 +76,9 @@ Template.registerHelper('cpAFMDL', function (context, fieldAttr) {
 Template.registerHelper('themeRequireLabel', function (context) {
     //Check if the component selected theme require label, 
     //will skip label for special inputs/ themes (ex. input: Text, theme: Floating)...
+
+    //No label to appear with Floating / text input
+    //
 
     var inputType = AutoForm.getInputType(context);
 
@@ -72,5 +99,11 @@ Template.registerHelper('themeRequireLabel', function (context) {
     }
 
 });
+
+
+
+
+
+
 
 

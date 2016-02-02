@@ -1,6 +1,6 @@
 <template name="afLabel_mdl">
 
-  <label  for="{{atts.id}}" {{atts}}>
+  <label class="{{getMdlLabelClass this}}" for="{{atts.id}}" {{atts}}>
     {{#if this.labelText}}{{this.labelText}}
     {{else}}{{afFieldLabelText name=this.name}}
     {{/if}}

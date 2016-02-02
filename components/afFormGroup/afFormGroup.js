@@ -21,10 +21,11 @@ Template.afFormGroup_mdl.helpers({
         //Hide Label for  specific field types...
         var result, skipLabelTypes, type;
         skipLabelTypes = [
+            'text',
             'checkbox',
             'checkbox-group',
             'boolean-checkbox',
-            'select-radio',
+            // 'select-radio',
             'select-checkbox-inline',
             'select-radio-inline',
             'boolean-radio',

@@ -20,6 +20,11 @@ Package.onUse(function(api) {
     'utilities/helpers/atts-add-class.js',
 
     // input types
+    'inputTypes/boolean-checkbox/boolean-checkbox.html',
+    'inputTypes/select-radio/select-radio.html',
+    'inputTypes/select-checkbox/select-checkbox.html',
+    'inputTypes/textarea/textarea.html',
+    
     'inputTypes/button/button.html',
     'inputTypes/button/button.js',
     'inputTypes/hidden/hidden.html',
