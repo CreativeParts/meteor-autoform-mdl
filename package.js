@@ -14,10 +14,8 @@ Package.onUse(function(api) {
   
   api.addFiles([
     
-    'utilities/initialize.js',
-    'utilities/helpers/initialize.js',
-    'utilities/helpers/startup.js',    
-    'utilities/helpers/atts-add-class.js',
+    //Helpers...
+    'utilities/helpers/class-helpers.js',    
 
     // input types
     'inputTypes/boolean-checkbox/boolean-checkbox.html',
@@ -26,7 +24,7 @@ Package.onUse(function(api) {
     'inputTypes/textarea/textarea.html',
     
     'inputTypes/button/button.html',
-    'inputTypes/button/button.js',
+    
     'inputTypes/hidden/hidden.html',
     'inputTypes/submit/submit.html',
     'inputTypes/submit/submit.js',
