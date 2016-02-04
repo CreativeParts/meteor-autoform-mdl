@@ -17,25 +17,15 @@ Package.onUse(function(api) {
     //Helpers...
     'utilities/helpers/class-helpers.js',    
 
-
-
-
     // input types
     'inputTypes/boolean-checkbox/boolean-checkbox.html',
-
     'inputTypes/select-radio/select-radio.html',
-
     'inputTypes/select-checkbox/select-checkbox.html',
-
     'inputTypes/textarea/textarea.html',
-    
     'inputTypes/submit/submit.html',
-
     'inputTypes/text/text.html',
-
     'inputTypes/label/label.html',
     'inputTypes/label/label.js',
-
 
     // components that render a form
     'components/quickForm/quickForm.html',

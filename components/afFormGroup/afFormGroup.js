@@ -24,7 +24,6 @@ Template.afFormGroup_mdl.helpers({
             'checkbox',
             'checkbox-group',
             'boolean-checkbox',
-            // 'select-radio',
             'select-checkbox-inline',
             'select-radio-inline',
             'boolean-radio',

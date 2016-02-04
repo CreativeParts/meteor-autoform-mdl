@@ -32,7 +32,6 @@ Template.registerHelper('getMdlComponentOuterDivClass', function (context, field
 
     var result = "";
     var type = AutoForm.getInputType(context);
-    console.log(context);
     var attsExist = "false";
     
     if( typeof context == 'undefined' 
