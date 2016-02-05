@@ -21,10 +21,10 @@ $ meteor add creativeparts:meteor-autoform-mdl
 ```
 
 
-## Applying different MDL themes
+## Applying different Text input themes
 
-If you want to customize input fields (ex. Text) to display different MDL 
-themes (ex. Simple, Floating) you need to change the mdlTheme parameter in
+If you want to customize Text input fields to display different MDL 
+themes (ex. default, floating) you need to change the mdlTheme parameter in
 afQuickField. 
 
 Here's an example:
@@ -34,7 +34,7 @@ Here's an example:
   {{#autoForm collection="Customers" id="sampleForm" type="insert"}}
     <fieldset>
       <legend>Add new customer</legend>
-      {{> afQuickField name='title' mdltheme="Simple"}}
+      {{> afQuickField name='title' mdltheme="default"}}
     </fieldset>
     <button type="submit">Save</button>
   {{/autoForm}}
@@ -50,11 +50,10 @@ Use the following attributes with afQuickField.
 
 The following attributes are recognized:
 
-* `mdltheme`: Required to specify MDL component theme, the following themes are supported for listed below input types:
-    * Text: 'Normal', 'Floating'.
-    * Textarea: 
-* `mdlthemelabel`: Required to specify Text input label text. Applies only when 'Normal' mdltheme is selected
+* `mdltheme`: Required to specify MDL component theme, specifically for Text input. the following themes are supported for Text input:
+    * Text: 'default', 'floating'.
 
+if no mdltheme selected, 'default' will be the default theme.
 
 ## License
 meteor-autoform-mdl is licensed under the [MIT Licence](LICENSE).

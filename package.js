@@ -12,12 +12,11 @@ Package.onUse(function(api) {
   api.use("aldeed:autoform@5.8.1");
   api.use("aldeed:collection2@2.8.0");
   
-  api.addFiles([
-    
-    //Helpers...
+  api.addFiles([    
+    //Helper functions...
     'utilities/helpers/class-helpers.js',    
 
-    // input types
+    //Input types
     'inputTypes/boolean-checkbox/boolean-checkbox.html',
     'inputTypes/select-radio/select-radio.html',
     'inputTypes/select-checkbox/select-checkbox.html',
@@ -27,14 +26,10 @@ Package.onUse(function(api) {
     'inputTypes/label/label.html',
     'inputTypes/label/label.js',
 
-    // components that render a form
+    //Components...
     'components/quickForm/quickForm.html',
     'components/quickForm/quickForm.js',
-
-
-    // components that render controls within a form
     'components/afFormGroup/afFormGroup.html',
-    'components/afFormGroup/afFormGroup.js'
-    
+    'components/afFormGroup/afFormGroup.js'  
   ], "client");
 });

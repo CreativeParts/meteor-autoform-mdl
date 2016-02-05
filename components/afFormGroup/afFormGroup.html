@@ -1,6 +1,6 @@
 <template name="afFormGroup_mdl">
-    <div class="mdl-grid">
-        <div class="{{#if addInputField}}input-field{{/if}} mdl-cell mdl-cell--12-col {{getMdlComponentOuterDivClass this this.afFieldInputAtts}}">
+  <div class="mdl-grid">
+    <div class="{{#if addInputField}}input-field{{/if}} mdl-cell mdl-cell--12-col {{getMdlComponentOuterDivClass this this.afFieldInputAtts}}">
             
             {{#if skipLabel}}
                 {{> afFieldInput this.afFieldInputAtts}}
@@ -8,7 +8,6 @@
                 {{>afLabel_mdl this}}
                 {{> afFieldInput this.afFieldInputAtts}}
             {{/if}}
-
 
             {{#if afFieldIsInvalid name=this.name}}
                     {{#if mdlErr}}
@@ -20,6 +19,6 @@
                     {{/if}}
             {{/if}}
 
-        </div>
     </div>
+  </div>
 </template>
