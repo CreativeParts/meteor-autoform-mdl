@@ -1,11 +1,12 @@
 
 
-Google MDL theme for Meteor Autoform - [[[ Under Development - please do NOT use in production ]]]
+Google MDL theme for Meteor Autoform - [ ALPHA RELEASE ]
 =========================
 Adds [Material Design Lite](http://www.getmdl.io/) look and feel to autoform.
 
 
 - [Installation](#installation)
+- [Supported Components](#supported-components)
 - [Applying different MDL themes](#applying-different-mdl-themes)
 - [Attributes](#attributes)
 - [License](#license)
@@ -19,6 +20,17 @@ In a Meteor app directory, enter:
 $ meteor add aldeed:autoform
 $ meteor add creativeparts:meteor-autoform-mdl
 ```
+
+
+## Supported components
+
+The following components are currently supported:
+
+* `Text Fields`
+* `Text Area` 
+* `Checkboxes`
+* `Radio Buttons`
+* `Buttons`
 
 
 ## Applying different Text input themes
